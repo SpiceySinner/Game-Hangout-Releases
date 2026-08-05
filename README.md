@@ -45,6 +45,17 @@ raise no prompt at all, because none of them need any rights.
 window belongs to the game's own server software, not to Game-Hangout. It is
 supposed to be there, and closing it stops the server.
 
+**Windows will ask about the firewall, once per game.** The first time you run a
+game server, a blue box appears saying Windows Defender Firewall has blocked
+some features, with a shield on the button. That is Windows noticing the game's
+server waiting for players to connect, and it needs administrator rights because
+answering it writes a firewall rule.
+
+Say **Allow access**, with **Private networks** ticked. Windows remembers the
+answer, so it happens once per game and never again — and it is about the game's
+server, not about Game-Hangout, which is why it can only be asked at that moment
+and not during installation.
+
 ## Updates
 
 Game-Hangout checks for a new version a few seconds after it starts and tells
