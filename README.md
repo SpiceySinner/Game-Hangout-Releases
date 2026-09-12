@@ -74,3 +74,60 @@ Settings → Apps → Game-Hangout → Uninstall, the same as anything else.
 Your identity and your friends list are deliberately left behind, so that
 reinstalling does not make you a stranger to everybody who saved you. To remove
 those as well, delete `C:\ProgramData\GameHangout` afterwards.
+
+---
+
+## How it works
+
+Everyone runs the app. When one of you starts a hangout and the others join,
+the app builds a small private network between your machines: a real network
+adapter on each PC, linked directly to the others over encrypted connections.
+Nothing is forwarded, and no server in the middle carries your traffic. To a
+game, the others look like they are sitting on the same LAN.
+
+Games that need a dedicated server (Minecraft, Project Zomboid, SCUM) get it
+from the app. It downloads the server files from Steam — no account needed —
+and starts the server on one member's PC. The save, the world, lives with that
+PC. When that person leaves, the hangout hands itself and the world to the next
+member, so the evening does not end with whoever started it. If you own a
+machine that is always on (an old laptop, a Pi), it can hold the world while
+everyone is asleep. That part is optional.
+
+Mods travel as a list, not as files. Everyone gets the same list, every copy
+fetches the mods from where they come from, and the app tests the combination
+before anyone joins — missing dependencies are spotted up front, and when one
+mod still breaks the server, the app finds which one.
+
+Your identity is a key on your machine; friends are people who saved each
+other. There is no account and no password, because there is nothing to log
+in to.
+
+### What we are working on right now (September 2026)
+
+- **Joining instead of starting twice.** Before a hangout starts, the app asks
+  around whether the world is already running with one of your friends and
+  offers to join it instead of opening a second copy.
+- **Leaving without a dialog.** The session and the world move to the next
+  person on their own, including when the host's PC simply dies.
+- **The way in for strangers.** A domain, and one link that carries a person
+  from the website to the download to the door of a hangout.
+- **A signed installer**, so the blue box on first start goes away. The road
+  is decided; the section above about the warning gets rewritten the day it
+  lands.
+- **Shipping all of it as v0.5.2.** Out is v0.5.1; saved modpacks, share
+  links, in-app invites and everything above are waiting on that release.
+
+### The next big milestones
+
+1. **More games.** Three work end to end today; the server files of 57 are
+   measured and sit in the app's list. BeamNG (via BeamMP) is next in line.
+2. **Adding a game yourself.** Every supported game is a small text file that
+   says where its server comes from, how it starts and what it needs. The
+   plan is a developer mode where you write that file for a game we have not
+   touched, try it locally, and play on it — and, once that works without
+   guesswork, hand it in so everyone gets the game.
+3. **Opening the door.** Today you need a friend on the inside. The pieces for
+   groups that start from the website are built; what is left is walking the
+   whole road once as a stranger.
+4. Further out, building mods together — but that is a conversation so far,
+   not a plan.
