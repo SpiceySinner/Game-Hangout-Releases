@@ -104,18 +104,15 @@ in to.
 
 ### What we are working on right now (September 2026)
 
-- **Joining instead of starting twice.** Before a hangout starts, the app asks
-  around whether the world is already running with one of your friends and
-  offers to join it instead of opening a second copy.
-- **Leaving without a dialog.** The session and the world move to the next
-  person on their own, including when the host's PC simply dies.
-- **The way in for strangers.** A domain, and one link that carries a person
-  from the website to the download to the door of a hangout.
+- **Letting strangers in.** The website lives at
+  [game-hangout.com](https://game-hangout.com) now, and every link the app
+  hands out — to a group, to a running hangout, to a modpack — lands on a
+  page there that says what you are looking at and offers the download. Next
+  is walking that road end to end with people who are not our friends yet,
+  and listening to what they say.
 - **A signed installer**, so the blue box on first start goes away. The road
   is decided; the section above about the warning gets rewritten the day it
   lands.
-- **Shipping all of it as v0.5.2.** Out is v0.5.1; saved modpacks, share
-  links, in-app invites and everything above are waiting on that release.
 
 ### The next big milestones
 
@@ -126,8 +123,8 @@ in to.
    plan is a developer mode where you write that file for a game we have not
    touched, try it locally, and play on it — and, once that works without
    guesswork, hand it in so everyone gets the game.
-3. **Opening the door.** Today you need a friend on the inside. The pieces for
-   groups that start from the website are built; what is left is walking the
-   whole road once as a stranger.
+3. **Opening the door.** Today you need a friend on the inside, or a link
+   from one. The pieces for groups that start from the website are built; the
+   walk with strangers is the first item above.
 4. Further out, building mods together — but that is a conversation so far,
    not a plan.
