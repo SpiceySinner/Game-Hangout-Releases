@@ -71,9 +71,13 @@ what they are showing you.
 
 Settings → Apps → Game-Hangout → Uninstall, the same as anything else.
 
-Your identity and your friends list are deliberately left behind, so that
-reinstalling does not make you a stranger to everybody who saved you. To remove
-those as well, delete `C:\ProgramData\GameHangout` afterwards.
+Your identity, your friends list and your worlds are deliberately left behind,
+so that reinstalling does not make you a stranger to everybody who saved you. To
+remove those as well, delete these folders afterwards:
+
+- `C:\ProgramData\GameHangout` — this PC's identity
+- `%APPDATA%\GameHangout` — your name, your friends and your settings
+- `%LOCALAPPDATA%\GameHangout` — the game servers and the worlds
 
 ---
 
@@ -99,15 +103,16 @@ before anyone joins — missing dependencies are spotted up front, and when one
 mod still breaks the server, the app finds which one.
 
 Your identity is a key on your machine; friends are people who saved each
-other. There is no account and no password, because there is nothing to log
-in to.
+other, usually through a friend link. There is no Game-Hangout account and no
+password. If you like, you can connect your Discord or Steam account, so the
+people you send your friend link to see which account it comes from.
 
-### What we are working on right now (September 2026)
+### What we are working on right now (October 2026)
 
 - **Letting strangers in.** The website lives at
-  [game-hangout.com](https://game-hangout.com) now, and every link the app
-  hands out — to a group, to a running hangout, to a modpack — lands on a
-  page there that says what you are looking at and offers the download. Next
+  [game-hangout.com](https://game-hangout.com), and every link the app hands
+  out — a friend link, a running hangout, a modpack — lands on a page there
+  that says what you are looking at and offers the download. Next
   is walking that road end to end with people who are not our friends yet,
   and listening to what they say.
 - **A signed installer**, so the blue box on first start goes away. The road
