@@ -89,9 +89,9 @@ adapter on each PC, linked directly to the others over encrypted connections.
 Nothing is forwarded, and no server in the middle carries your traffic. To a
 game, the others look like they are sitting on the same LAN.
 
-Games that need a dedicated server (Minecraft, Project Zomboid, SCUM) get it
-from the app. It downloads the server files from Steam — no account needed —
-and starts the server on one member's PC. The save, the world, lives with that
+Games that need a dedicated server (Minecraft, Project Zomboid, SCUM,
+Counter-Strike 2) get it from the app. It downloads the server files from
+Steam — no account needed — and starts the server on one member's PC. The save, the world, lives with that
 PC. When that person leaves, the hangout hands itself and the world to the next
 member, so the evening does not end with whoever started it. If you own a
 machine that is always on (an old laptop, a Pi), it can hold the world while
@@ -100,14 +100,16 @@ everyone is asleep. That part is optional.
 Mods travel as a list, not as files. Everyone gets the same list, every copy
 fetches the mods from where they come from, and the app tests the combination
 before anyone joins — missing dependencies are spotted up front, and when one
-mod still breaks the server, the app finds which one.
+mod still breaks the server, the app finds which one. The list is built
+together: the host opens a round in the app and everyone proposes, or you
+start one on the website and send the link.
 
 Your identity is a key on your machine; friends are people who saved each
 other, usually through a friend link. There is no Game-Hangout account and no
 password. If you like, you can connect your Discord or Steam account, so the
 people you send your friend link to see which account it comes from.
 
-### What we are working on right now (October 2026)
+### What we are working on right now (November 2026)
 
 - **Letting strangers in.** The website lives at
   [game-hangout.com](https://game-hangout.com), and every link the app hands
@@ -121,7 +123,7 @@ people you send your friend link to see which account it comes from.
 
 ### The next big milestones
 
-1. **More games.** Three work end to end today; the server files of 57 are
+1. **More games.** Four work end to end today; the server files of 57 are
    measured and sit in the app's list. BeamNG (via BeamMP) is next in line.
 2. **Adding a game yourself.** Every supported game is a small text file that
    says where its server comes from, how it starts and what it needs. The
